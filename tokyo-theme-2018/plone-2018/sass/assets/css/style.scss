@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import "../../core/_variable";
+
+/* ReBoot */
+
+@import "../../_reboot";
+
+/* General */
+
+@import "../../_general";
+
+/* Base */
+
+@import "../../_base";
+
+/* Layout */
+
+/*==============================
+headr
+==============================*/
+
+@import "../../_header";
+
+/*==============================
+main
+==============================*/
+
+@import "../../_main";
+
+/*==============================
+pages
+==============================*/
+
+@import "../../_page";
+
+@import "../../_home";
+
+@import "../../_about";
+
+
+/*==============================
+footer
+==============================*/
+
+@import "../../_footer";
+
+
+/*memo
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Alte-DIN-1451-Mittelschrift'; 
+*/

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.063 36.062">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="hamberger_c" transform="translate(-315.469 -23.469)">
+    <line id="線_2" data-name="線 2" class="cls-1" x2="48" transform="translate(316.529 24.529) rotate(45)"/>
+    <line id="線_3" data-name="線 3" class="cls-1" x2="48" transform="translate(316.529 58.471) rotate(-45)"/>
+  </g>
+</svg>

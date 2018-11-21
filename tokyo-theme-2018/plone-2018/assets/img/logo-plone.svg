@@ -1,0 +1,15 @@
+<svg id="but" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f7cb2;
+      }
+    </style>
+  </defs>
+  <path id="パス_6" data-name="パス 6" class="cls-1" d="M40.52,47.8A1.52,1.52,0,1,1,39,49.32,1.518,1.518,0,0,1,40.52,47.8Z" transform="translate(-34.441 -45.336)"/>
+  <path id="パス_7" data-name="パス 7" class="cls-1" d="M55.439,62.42a1.52,1.52,0,1,1-1.52-1.52A1.518,1.518,0,0,1,55.439,62.42Z" transform="translate(-44.755 -55.42)"/>
+  <path id="パス_8" data-name="パス 8" class="cls-1" d="M40.52,74.1A1.52,1.52,0,1,1,39,75.62,1.518,1.518,0,0,1,40.52,74.1Z" transform="translate(-34.441 -65.58)"/>
+  <g id="グループ化_2" data-name="グループ化 2">
+    <path id="パス_9" data-name="パス 9" class="cls-1" d="M26.2,37.1a7,7,0,1,0,7,7A7,7,0,0,0,26.2,37.1Zm3.938,10.914a5.559,5.559,0,1,1,1.635-3.937A5.687,5.687,0,0,1,30.137,48.014Z" transform="translate(-19.2 -37.1)"/>
+  </g>
+</svg>

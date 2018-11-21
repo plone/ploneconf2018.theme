@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+
+    <!-- Header -->
+    <before css:theme-children="head" css:content="title" />
+    <before css:theme-children="head" css:content="head meta" />
+    <before css:theme-children="head" css:content="head script" />
+    <before css:theme-children="head" css:content="head style" />
+    <!--before css:theme-children="head" css:content="head base" /-->
+    <before css:theme-children="head" css:content="head link" />
+    <copy attributes="*" css:content="body" css:theme="body" />
+    <merge attributes="class" css:content="body" css:theme="body" />
+
+    <!-- Apply the following rules to standard Plone pages -->
+    <!--rules css:if-content="#visual-portal-wrapper">
+        <replace css:theme="html head title" css:content="html head title" />
+        <before css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head"
+               content="/html/head/link | /html/head/style | /html/head/meta" />
+        <merge attributes="class" css:theme="body" css:content="body" />
+        <after css:theme-children="html body" css:content="html head script" />
+    </rules-->
+
+    <rules css:if-content="body.section-home">
+      <rules css:if-content="body.template-document_view">
+        <theme href="plone-2018/index.html"></theme>     
+        <replace css:content="#portal-column-content" css:theme-children="main" />
+      </rules>
+    </rules>
+
+    <!--rules css:if-content="body.section-front-page"></rules-->
+    <theme href="plone-2018/about.html"></theme>
+    <replace css:content="#portal-column-content" css:theme-children="section.pagecontents" />
+    <replace css:content="header.pagetitle" css:theme="header.pagetitle" />
+    <replace css:content="ul.gnav-contents" css:theme="ul.gnav-contents" />
+    <replace css:content="#plone-conf-footer" css:theme="body > footer" />
+    <!--drop css:content="h1.documentFirstHeading" css:if-not-content=".portaltype-presentation" /-->
+    <drop css:content="h1.documentFirstHeading" css:if-not-content="body:not(.portaltype-presentation):not(.portaltype-person)" />
+    <drop css:content="#portal-column-content footer" />
+    <drop css:content=".actionMenu" />
+    <drop css:content="#rss-subscription" />
+    <drop css:content=".documentDescription" />
+
+    <!-- Toolbar -->
+    <before css:theme-children="body" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
+    <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
+
+</rules>
